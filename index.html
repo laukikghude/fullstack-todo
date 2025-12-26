@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Advanced To-Do App</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="top-bar">
+    <h1>🚀 Advanced Task Manager</h1>
+    <button id="toggleTheme" class="btn theme-btn">🌙 Dark Mode</button>
+  </div>
+
+  <div class="container">
+
+    <!-- Search Bar -->
+    <input type="text" id="searchBar" class="search-bar" placeholder="🔍 Search tasks...">
+
+    <!-- Stats Dashboard -->
+    <div class="stats">
+      <div class="stat-card">Total: <span id="totalTasks">0</span></div>
+      <div class="stat-card">Completed: <span id="completedTasks">0</span></div>
+      <div class="stat-card">Pending: <span id="pendingTasks">0</span></div>
+    </div>
+
+    <!-- Task Form -->
+    <form id="taskForm" class="task-form">
+      <input id="title" placeholder="Task title..." required />
+      <input id="description" placeholder="Description (optional)" />
+      
+      <select id="category">
+        <option value="General">General</option>
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Study">Study</option>
+      </select>
+
+      <select id="priority">
+        <option value="Low">Low Priority</option>
+        <option value="Medium">Medium Priority</option>
+        <option value="High">High Priority</option>
+      </select>
+
+      <button type="submit" class="btn add-btn">Add Task</button>
+    </form>
+
+    <!-- Task Lists -->
+    <h2>Tasks</h2>
+    <ul id="tasks" class="task-list" draggable="true"></ul>
+
+    <h2>Completed Tasks</h2>
+    <ul id="completedList" class="task-list completed-list"></ul>
+
+  </div>
+
+  <script>
+    const API_URL = '/api/tasks';
+  </script>
+  <script src="app.js"></script>
+
+</body>
+</html>

@@ -76,7 +76,7 @@ Render (Backend)
 
 Netlify / Vercel (Frontend)
 
-⚙️ API Endpoints Method Endpoint Description GET /api/tasks Fetch all tasks POST /api/tasks Create a new task PUT /api/tasks/:id Update a task DELETE /api/tasks/:id Delete a task 🛠 Setup Instructions (Local Development) 1️⃣ Clone the Repository git clone https://github.com/pruthvirajtarode/fullstack-todo.git cd fullstack-todo
+⚙️ API Endpoints Method Endpoint Description GET /api/tasks Fetch all tasks POST /api/tasks Create a new task PUT /api/tasks/:id Update a task DELETE /api/tasks/:id Delete a task 🛠 Setup Instructions (Local Development) 1️⃣ Clone the Repository git clone https:https://github.com/laukikghude/fullstack-todo
 
 2️⃣ Install Backend Dependencies cd backend npm install
 
@@ -134,7 +134,7 @@ Pull requests are welcome. Feel free to open issues for suggestions & improvemen
 
 👨‍💻 Author
 
-Pruthviraj Shyamrao Tarode 📌 GitHub: https://github.com/pruthvirajtarode
+Laukik Santosh Ghude 📌 GitHub: https://github.com/laukikghude
 
 📌 LinkedIn: (add your link)
 
